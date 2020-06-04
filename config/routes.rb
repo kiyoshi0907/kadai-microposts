@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     end
   end
   
+  #get 'likes', to: 'users#likes'
   
   resources :microposts, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
